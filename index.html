@@ -1,0 +1,261 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5d7f826647.js" crossorigin="anonymous"></script>
+    
+ 
+</head>
+<body>
+<div id="header">
+   <div class ="container">
+    <nav> 
+        <img src="images/photoswork.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experiences">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+        <style>
+            img.logo {
+                position: middle; /* Enable positioning */
+                top: -150px; /* Move the image up by 300 pixels */
+                width:800px;
+                height:auto;
+            }
+
+            ul {
+            padding-left: 0; /* Remove the default padding */
+            margin-left: -90px; /* Adjust the margin to move the list to the left */
+        }
+
+        ul li {
+            display: inline; /* Display list items inline */
+            margin-right: 10px; /* Add some spacing between list items */
+        }
+        </style>
+             </div>   
+ </div>
+ 
+<div> <div id="about"> 
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/flowerswow.jpeg">
+            </div>
+            <div class="about-col-2"> 
+            <h1 class="sub-title">About Me</h1>
+            <p style="text-align: left; margin-left: 0;">
+                Hello! I am an undergrad student at Brooklyn College, 
+                with a love for web development and coding. In my free time,
+                I love to travel, work on coding videos for my YouTube channel,
+                and spend time with family. </p>
+        <div class="tab-titles">
+            <p class = "tab-links active-link" onclick="opentab('Skills')">Skills</p>
+            <p class = "tab-links" onclick="opentab('Recongitions')">Recongitions</p>
+            <p class = "tab-links"onclick="opentab('Education')">Education</p>
+        </div>   
+       
+      <div class="tab-contents active-tab" id="Skills">
+            <ul>
+                <li>
+                    <span>Programming Languages</span><br>
+                    Java, Javascript,HTML,CSS
+                </li>
+                <li><span>Relevant Coursework</span><br>CISC 3130 - Data Structures</li>
+                <li><span>Extracurriculurs</span><br>Youtube Channel teaching students how to code,
+                tutoring middle school students, working on coding projects</li>
+            </ul>
+        </div>
+    
+        <div class="tab-contents" id="Recongitions">
+            <ul>
+                <li><span>Advanced Regents Diploma </span><br>
+                </li>
+                <li><span>Arista Honors Society</span><br>
+                   </li>
+                   <li><span>Collegiate Science and Technology Program (currently enrolled) </span><br>
+                   </li>
+                   <li><span>Excellence in English Award</span><br>
+                   </li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="Education">
+            <ul>
+                <li><span>Brooklyn College  Fall 2021-June 2025
+               <li><span>Midwood Highschool Fall 2017-June 2021</li>
+            </ul>
+        </div>
+        <div class="tab-contents" >
+            <ul>
+                <li><span>Brooklyn College</span><br>
+                     Fall 2021-June 2025
+                </li>
+                <li><span>Midwood Highschool</span><br>Fall 2017-June 2021</li>
+            </ul>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- Experiences & Extracurriculars  -->
+<div id="experiences">
+    <div class="container">
+        <h1 class="sub-title">Experiences & Extracurriculars</h1>
+        <div class="experiences-list">
+            <div> 
+                <i class="fa-regular fa-newspaper fa-beat-fade" style="color: #fff;"></i>
+                <h2>Healthy CUNY Advocate</h2>
+               
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Vestibulum ac justo eu nunc tincidunt consectetur. </p>
+                    <a href="#">HealthyCUNY Webpage</a>
+            </div>
+            <div> 
+                <i class="fa-brands fa-youtube fa-beat" style="color: #fff;"></i>
+                <h2>Youtube Channel</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Vestibulum ac justo eu nunc tincidunt consectetur. </p>
+                    <a href="#">Check out my Youtube Channel</a>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+<!--projects-->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="project-list">
+            <div class="work">
+                <img src="pictures/pic2.jpeg" alt="">
+                <div class="layer">
+                    <h3>Project 1</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nulla neque. 
+                        Nullam vel quam non mi volutpat scelerisque. Vivamus vel varius orci, eu tincidunt massa. 
+                      </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pictures/pic2.jpeg" alt="">
+                <div class="layer">
+                    <h3>Project 2</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nulla neque. 
+                        Nullam vel quam non mi volutpat scelerisque. Vivamus vel varius orci, eu tincidunt massa. 
+                         </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pictures/pic2.jpeg" alt="">
+                <div class="layer">
+                    <h3>Project 3</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nulla neque. 
+                        Nullam vel quam non mi volutpat scelerisque. Vivamus vel varius orci, eu tincidunt massa. 
+                         </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- CONTACT FORM -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+        <div class="contact-left">
+            <h1>Contact Me</h1>
+            <p><i class="fa-solid fa-envelope" style="color: #fff"></i>munirharmain@gmail.com</p>
+            <div class="socialicons">
+            </div>
+            <a href="pictures/RESUME.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+               <form onsubmit="sendEmail(); reset(); return false;">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email"required>
+                <textarea name="message"  rows="6" placeholder="Your Message"></textarea>
+                <button type ="submit" class="btn btn2">Submit</button>
+               </form> 
+        </div>
+        </div>
+    </div>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+    function sendEmail() {
+        window.Email.send({
+    Host : "smtp.gmail.com",
+    Username : "////",
+    Password : "//////",
+    To : 'munirharmain@gmail.com.com',
+    From : document.getElementbyID("email").value,
+    Subject : "New Contact Form Enquiry",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+    }
+    </script>
+<div class="copyright">
+    <p>Copyright © 2023 Harmain Munir. All rights reserved. </p>
+</div>
+</div>
+
+
+
+
+
+
+
+<Script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    </script>
+
+        <script>
+var sidemenu = document.getElementById("sidemenu");
+function openmenu() {
+    sidemenu.style.right = "0";
+}
+function closemenu() {
+    sidemenu.style.right = "-200px";
+}
+</Script>
+
+<style>
+    .copyright {
+        width: 100%;
+        text-align: center;
+        padding: 25px 0;
+        background: #262626;
+        font-weight: 300;
+        margin-top: 20px;
+    }
+        
+    
+</style>
+
+
+</body>
+</html>
