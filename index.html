@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
+    <title>Harmain's Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5d7f826647.js" crossorigin="anonymous"></script>
     
  
 </head>
 <body>
+    <div class="cover-photo"></div> <!-- make cover photo entire background -->
 <div id="header">
    <div class ="container">
     <nav> 
@@ -45,18 +46,18 @@
  </div>
  
 <div> <div id="about"> 
-    <div class="container">
+    <div class="about-container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/flowerswow.jpeg">
+                <img src="images/images.jpeg">
             </div>
             <div class="about-col-2"> 
-            <h1 class="sub-title">About Me</h1>
+            <h1 class="sub-title">Welcome!</h1>
+            <br>
             <p style="text-align: left; margin-left: 0;">
-                Hello! I am an undergrad student at Brooklyn College, 
-                with a love for web development and coding. In my free time,
-                I love to travel, work on coding videos for my YouTube channel,
-                and spend time with family. </p>
+                Hello! I am an aspiring Full Stack Engineer, with a love for Web and IOS development! In my free time,
+                I love building innovative projects using new technologies, attending hackathons, or tutoring. 
+             </p>
         <div class="tab-titles">
             <p class = "tab-links active-link" onclick="opentab('Skills')">Skills</p>
             <p class = "tab-links" onclick="opentab('Recongitions')">Recongitions</p>
@@ -64,45 +65,77 @@
         </div>   
        
       <div class="tab-contents active-tab" id="Skills">
-            <ul>
-                <li>
-                    <span>Programming Languages</span><br>
-                    Java, Javascript,HTML,CSS
-                </li>
-                <li><span>Relevant Coursework</span><br>CISC 3130 - Data Structures</li>
-                <li><span>Extracurriculurs</span><br>Youtube Channel teaching students how to code,
-                tutoring middle school students, working on coding projects</li>
-            </ul>
+        <ul>
+            <li>
+                <span>Programming Languages</span><br>
+                    <li>Java</li><br>
+                    <li>JavaScript</li><br>
+            </li>
+            <li>
+                <br>
+                <span>Technologies</span><br>  
+                <li>HTML</li><br>  
+                <li>CSS</li><br>  
+                <li>Github</li><br>
+                <li>Node.js</li><br>
+                <li>Google Sheets API</li><br>
+            </li>
+        </ul>
         </div>
     
         <div class="tab-contents" id="Recongitions">
             <ul>
-                <li><span>Advanced Regents Diploma </span><br>
-                </li>
-                <li><span>Arista Honors Society</span><br>
-                   </li>
-                   <li><span>Collegiate Science and Technology Program (currently enrolled) </span><br>
-                   </li>
-                   <li><span>Excellence in English Award</span><br>
-                   </li>
+                <li>Brooklyn College Collegiate Science & Technology Program</li><br>
+                <br>
+                <li>Peter F. Vallone Scholarship </li><br>
+                <br>
+                <li>Advanced Regents Highschool Diploma</li><br>
+                <br>
+                <li>Excellence In English Award</li><br>
             </ul>
         </div>
         <div class="tab-contents" id="Education">
             <ul>
-                <li><span>Brooklyn College  Fall 2021-June 2025
-               <li><span>Midwood Highschool Fall 2017-June 2021</li>
-            </ul>
-        </div>
-        <div class="tab-contents" >
-            <ul>
-                <li><span>Brooklyn College</span><br>
-                     Fall 2021-June 2025
-                </li>
-                <li><span>Midwood Highschool</span><br>Fall 2017-June 2021</li>
+                <li>Brooklyn College Fall 2021-June 2025</li><br>
+                <br>
+                <li>Midwood Highschool Fall 2017-June 2021</li>
             </ul>
         </div>
         </div>
         </div>
+        </div>
+    </div>
+</div>
+
+<!--projects-->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Web Development Projects</h1>
+        <div class="project-list">
+            <div class="work">
+                <img src="images/Screenshot 2024-01-23 at 11.23.41 PM.png" alt="">
+                <div class="layer">
+                    <h3>Reminder Requests App</h3>
+                    <p> Built for Brooklyn Hacks, a web application designed to streamline the process of sending reminder emails to users.
+                         Leveraging the Google Sheets API, users can schedule emails based on a specified date they input. 
+                      </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+            <div class="work">
+                <img src="images/Screenshot 2024-01-23 at 11.25.58 PM.png" alt="">
+                <div class="layer">
+                    <h3>Schedule Assistant</h3>
+                    <p> An innovative solution to the constant hurdle of students waiting weeks on end for advisor appointments to 
+                        begin thinking about a schedule for the next semester. 
+                        Schedule Assistant is designed to help students format their upcoming schedules without needing help from professors. 
+                         </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
     </div>
 </div>
 <!-- Experiences & Extracurriculars  -->
@@ -114,15 +147,16 @@
                 <i class="fa-regular fa-newspaper fa-beat-fade" style="color: #fff;"></i>
                 <h2>Healthy CUNY Advocate</h2>
                
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Vestibulum ac justo eu nunc tincidunt consectetur. </p>
-                    <a href="#">HealthyCUNY Webpage</a>
+                <p>As a Healthy CUNY Advocate, I was part of the spring cohort where we worked to 
+                inform students about the many options available at CUNY schools for not only, 
+            healthy food, also housing options for eligible </p>
+                    <a href="https://www.healthycuny.org">HealthyCUNY Webpage</a>
             </div>
             <div> 
                 <i class="fa-brands fa-youtube fa-beat" style="color: #fff;"></i>
                 <h2>Youtube Channel</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Vestibulum ac justo eu nunc tincidunt consectetur. </p>
+                <p>This channel is currently a work in progress, but I hope to upload videos about coding projects 
+                    and tutorials for students learning to code</p>
                     <a href="#">Check out my Youtube Channel</a>
             </div>
            
@@ -130,46 +164,8 @@
     </div>
 </div>
 
-<!--projects-->
-<div id="projects">
-    <div class="container">
-        <h1 class="sub-title">Projects</h1>
-        <div class="project-list">
-            <div class="work">
-                <img src="pictures/pic2.jpeg" alt="">
-                <div class="layer">
-                    <h3>Project 1</h3>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nulla neque. 
-                        Nullam vel quam non mi volutpat scelerisque. Vivamus vel varius orci, eu tincidunt massa. 
-                      </p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="pictures/pic2.jpeg" alt="">
-                <div class="layer">
-                    <h3>Project 2</h3>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nulla neque. 
-                        Nullam vel quam non mi volutpat scelerisque. Vivamus vel varius orci, eu tincidunt massa. 
-                         </p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="pictures/pic2.jpeg" alt="">
-                <div class="layer">
-                    <h3>Project 3</h3>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nulla neque. 
-                        Nullam vel quam non mi volutpat scelerisque. Vivamus vel varius orci, eu tincidunt massa. 
-                         </p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-        </div>
-        <a href="#" class="btn">See More</a>
-    </div>
-</div>
-<!-- CONTACT FORM -->
+
+<!-- CONTACT FORM 
 <div id="contact">
     <div class="container">
         <div class="row">
@@ -206,6 +202,8 @@
 );
     }
     </script>
+    !-->
+
 <div class="copyright">
     <p>Copyright © 2023 Harmain Munir. All rights reserved. </p>
 </div>
@@ -259,3 +257,4 @@ function closemenu() {
 
 </body>
 </html>
+
