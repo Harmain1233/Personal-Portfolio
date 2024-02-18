@@ -4,7 +4,7 @@
 **A project built to showcase my skills in web development**
 
 ## About the Project
-This project is a web application showcasing my resume in a website format, and to allow users to learn more about me and my work. 
+This project is a personal portfolio showcasing my current skills in front-end development.
 
 ### Technologies Used
 
